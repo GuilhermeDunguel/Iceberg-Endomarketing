@@ -1,0 +1,102 @@
+@import '../../../../../global.scss';
+
+.presence-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  max-width: 450px;
+  width: 100%;
+
+  padding: 15px;
+
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 2000;
+
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: $events-shadow;
+
+  @media screen and (max-width: 500px) {
+    max-width: 350px;
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .close-modal-button {
+      border: none;
+      background-color: transparent;
+    }
+  }
+  
+  .user-div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 5px;
+
+    background-color: $white;
+    box-shadow: $events-shadow;
+    border-radius: 5px;
+    .user-image-div {
+      .user-image {
+        width: 100px;
+        border-radius: 50%;
+      }
+    }
+    .user-info-div {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      gap: 5px;
+      .user-name {
+        color: $darker-grey;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .user-username {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      .user-presence-div {
+        .presence-confirmed {
+          color: $green;
+        }
+        .presence-not-confirmed {
+          color: $red;
+        }
+      }
+    }
+  }
+
+}
+.modal-background {
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1999;
+
+  opacity: 50%;
+  background-color: $black;
+}

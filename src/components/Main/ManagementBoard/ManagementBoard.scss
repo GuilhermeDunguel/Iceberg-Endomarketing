@@ -1,0 +1,39 @@
+@import '../../../global.scss';
+
+.management-board {
+  max-width: 300px;
+  width: 100%;
+
+  padding: 15px 10px;
+
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: $events-shadow;
+
+  @media screen and (max-width: 1000px){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 100vw;
+    width: 100%;
+    .list-of-boards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      max-width: 100vw;
+      width: 100%;
+
+      @media screen and (max-width: 930px){
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  }
+  .management-board-title {
+    color: $grey;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../../../../global.scss';
+
+.type-selector {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 5px;
+
+  position: absolute;
+  top: 40px;
+  left: 73%;
+  transform: translateX(-50%);
+
+  padding: 5px;
+
+  width: 150px;
+
+  border-radius: 5px;
+  background-color: $white;
+  box-shadow: $events-shadow;
+
+  .input-div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      input:hover {
+         cursor: pointer;
+      }
+      .input-label {
+         cursor: pointer;
+      }
+  }
+  button {
+     color: $white;
+     font-weight: bold;
+     height: 25px;
+
+     border: none;
+     border-radius: 3px;
+     background-color: $cyan;
+  }
+}

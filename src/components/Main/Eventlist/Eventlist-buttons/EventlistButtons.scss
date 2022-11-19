@@ -1,0 +1,55 @@
+@import '../../../../global.scss';
+
+.newslist-buttons {
+   display: flex;
+   gap: 8.5px;
+   
+   .type-div {
+      position: relative;
+   }
+
+   .button-default-style {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   
+      padding: 11px 12px;
+   
+      width: 103px;
+      height: 38px;
+   
+      color: $black;
+      font-size: 14px;
+      font-weight: 400;
+   
+      border: none;
+      border-radius: 4px;
+      background-color: $grey;
+
+      transition: 0.15s;
+   }
+
+   .content-filter-button {
+
+      color: $grey;
+
+      border: 2px solid $light-grey;
+      background-color: $white;
+
+      &:hover {
+         filter: brightness(95%)
+      }
+   }
+
+   .content-creator-button {
+      color: $white;
+   
+      border: none;
+      background-color: $cyan;
+      
+      &:hover {
+         filter: brightness(110%)
+      }
+   }
+}
+

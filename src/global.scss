@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+// screen-sizes
+
+   $super-small: 375px;
+   $small: 414px;
+   $medium: 820px;
+   $big: 1200px;
+
+
+// colors
+
+   $white: #fff;
+
+   $lighter-grey: #DBDBDB;
+   $light-grey: #B4B4B4;
+   $grey: #707070;
+   $darker-grey: #4b4b4b;
+
+   $light-black: #333333;
+   $black: #000;
+
+   $lighter-blue: #F2F3F5;
+   $light-blue: #E9F2F6;
+
+   $cyan: #3489B1;
+
+   $cream: #FFF2DE;
+   $dark-cream: #DCD1C0;
+
+   $green: #157a15;
+
+   $light-red: #EE8686;
+   $red: #bb0f0f;
+
+
+// Effects 
+
+   $header-shadow: 0px 3px 6px 0px #0000000D;
+   $events-shadow: 0px 3px 6px 0px #00000029;
+
+// global/app code:
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+
+   overflow-x: hidden;
+
+   font-family: 'Open Sans', sans-serif;
+   background-color: $lighter-blue;
+
+   button {
+      &:hover {
+         cursor: pointer;
+         filter: brightness(95%)
+      }
+   }
+}

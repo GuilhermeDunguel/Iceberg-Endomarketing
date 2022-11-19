@@ -1,0 +1,170 @@
+@import '../../../../global.scss';
+
+.event-item-section {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   .event-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:first-child{
+         margin-top: 16px;
+      }
+
+      padding: 10px;
+
+      background-color: $white;
+      box-shadow: $events-shadow;
+
+      .event-container-left-side {
+         display: flex;
+         align-items: initial;
+
+         gap: 15px;
+
+      }
+
+      .event-image-div {
+         img {
+            width: 80px;
+            height: 80px;
+         }
+         .event-details-mobile-div {
+            display: none;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            margin-top: 10px;
+            
+            font-size: 14px;
+            font-weight: 400;
+
+            color: $grey;
+
+            @media screen and (max-width: 570px) {
+               display: flex;
+            }
+
+            .event-category {
+               color: $white;
+               font-weight: bold;
+               font-size: 10px;
+               padding: 3px 5px;
+            }
+
+            #event {
+               color: $light-black;
+               background-color: $light-red;
+            }
+
+            #release {
+               background-color: $cyan;
+            }
+
+            #publication {
+               background-color: $grey;
+            }
+         }
+      }
+
+      .event-info-div {
+         display: flex;
+         flex-direction: column;
+         gap: 3px;
+         .event-title {
+            color: $grey;
+            font-weight: bold;
+            font-size: 16px;
+         }
+
+         .event-details-div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 5px 0px;
+
+            flex-wrap: wrap;
+
+            font-size: 14px;
+            font-weight: 400;
+
+            color: $grey;
+
+            .event-category {
+               color: $white;
+               font-weight: bold;
+               font-size: 10px;
+               padding: 3px 5px;
+            }
+
+            #event {
+               color: $light-black;
+               background-color: $light-red;
+            }
+
+            #release {
+               background-color: $cyan;
+            }
+
+            #publication {
+               background-color: $grey;
+            }
+
+            .event-invited-people {
+               text-decoration: underline;
+               color: $cyan;
+               &:hover {
+                  cursor: pointer;
+               }
+               
+            }
+            @media screen and (max-width: 570px) {
+               .event-info {
+                  display: none;
+               }
+               .event-invited-people {
+                  display: block;
+               }  
+            }
+         }
+
+         .event-description {
+            color: $grey;
+            font-weight: 400;
+         }
+         
+      }
+
+      .event-dotted-button-div {
+         position: relative;
+         .dotted-button {
+            padding: 4px 4px 6px 4px;
+            border: none;
+            border-radius: 50%;
+            background-color: $lighter-grey;
+         }
+         .event-deleting-menu {
+            position: absolute;
+
+            left: -75px;
+            bottom: -28px;
+
+            border-radius: 5px;
+            background-color: $white;
+            box-shadow: $events-shadow;
+            button {
+               width: 100px;
+
+               color: $light-red;
+               
+               border: none;
+               background-color: transparent;
+            }
+         }
+      }
+   }
+}

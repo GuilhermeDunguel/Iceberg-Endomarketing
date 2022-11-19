@@ -1,0 +1,66 @@
+@import '../../../../global.scss';
+
+.comercial-demo {
+  margin-top: 12px;
+  padding: 3px 5px;
+  background-color: $light-blue;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .board-title {
+      color: $grey;
+      font-size: 14px;
+    }
+    .right-buttons-div {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .right-button {
+        display: flex;
+
+        padding: 2px;
+
+        border: none;
+        border-radius: 100px;
+        background-color: $white;
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      .delete-board-button {
+        position: absolute;
+        top: 25px;
+        left: -12px;
+
+        padding: 5px 10px;
+
+        font-size: 13px;
+        color: $light-red;
+
+        border: none;
+        border-radius: 3px;
+        background-color: $white;
+        box-shadow: $events-shadow;
+      }
+    }
+  }
+  .comercial-images-div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    @media screen and (max-width: 370px) {
+      flex-wrap: wrap;
+   }
+
+    margin: 8px 0px 5px 0px;
+    .comercial-images {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
